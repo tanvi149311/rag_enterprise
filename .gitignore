@@ -1,0 +1,40 @@
+# ── Secrets — NEVER commit these ─────────────────────────────
+.env
+
+# ── Virtual environment ───────────────────────────────────────
+venv/
+.venv/
+env/
+
+# ── Generated data — too large / machine-specific ─────────────
+chroma_db/
+data/chunks.json
+data/document.pdf
+
+# ── Python cache ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ── Embedding model cache (downloaded automatically) ──────────
+.cache/
+*.bin
+*.safetensors
+
+# ── Test artifacts ────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── macOS system files ────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ── IDE files ─────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo

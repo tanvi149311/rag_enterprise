@@ -1,0 +1,31 @@
+# ─────────────────────────────────────────────────────────────
+# requirements.txt — Python dependencies for the RAG pipeline
+#
+# Install all dependencies with:
+#   pip install -r requirements.txt
+#
+# Python 3.9+ required (tested on 3.11)
+# ─────────────────────────────────────────────────────────────
+
+# ── PDF Loading ───────────────────────────────────────────────
+PyMuPDF==1.24.5                  # PDF text extraction (imported as fitz)
+
+# ── NLP & Text Processing ─────────────────────────────────────
+nltk==3.8.1                      # Sentence tokenization for clean chunking
+
+# ── Embeddings (local, no API key needed) ─────────────────────
+sentence-transformers==3.0.1     # all-MiniLM-L6-v2 embedding model
+torch==2.3.1                     # Required backend for sentence-transformers
+
+# ── Vector Database ───────────────────────────────────────────
+chromadb==0.5.3                  # Local persistent vector store
+
+# ── LLM Providers (install both, use one via .env) ────────────
+anthropic==0.30.1                # Anthropic Claude API client
+openai==1.35.7                   # OpenAI GPT-4o API client
+
+# ── Environment & Config ──────────────────────────────────────
+python-dotenv==1.0.1             # Load .env file into environment variables
+
+# ── Testing ───────────────────────────────────────────────────
+pytest==8.2.2                    # Unit test runner
