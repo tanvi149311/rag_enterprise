@@ -49,9 +49,9 @@ EMBEDDING_MODEL = "all-MiniLM-L6-v2"  # ~80MB, fast, high quality
 # TEXT CHUNKING (Sliding Window Strategy)
 # ─────────────────────────────────────────────
 
-CHUNK_SIZE = 500        # Max tokens/words per chunk
-CHUNK_OVERLAP = 100     # Overlap between consecutive chunks (context continuity)
-MIN_CHUNK_SIZE = 50     # Discard chunks shorter than this (noise removal)
+CHUNK_SIZE = 150        # Max tokens/words per chunk
+CHUNK_OVERLAP = 30     # Overlap between consecutive chunks (context continuity)
+MIN_CHUNK_SIZE = 30     # Discard chunks shorter than this (noise removal)
 
 # ─────────────────────────────────────────────
 # VECTOR DATABASE (ChromaDB)
